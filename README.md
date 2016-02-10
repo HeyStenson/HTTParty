@@ -11,8 +11,6 @@ This could be a whole class in and of itself, but I want you to come away from t
 
 So the first part of this process is you typing an address into the browser bar. Let's say something like `http://www.cutekittens.com/cutest-kitten-of-the-year.html`. This address is actually composed of several different parts, each of which contributes something different to the process. 
 
-First there's `http`. HTTP stands for **H**yper**t**ext **T**ransfer **P**rotocol, and it's used to transmit and receive web pages. HTTP just one of a few protocols that are used for transmitting information from a web server to a client. A client is what's receiving the information - in this case, your browser. There are other protocols you may have seen, like SMPT for mail and FTP for files. When you type "http://" before a website's address, you are telling a web server how to retrieve the document that you want by specifiying the protocol it should use. HTTP is used by your browser to communicate with the web server, telling it to bring you the web page you've requested. 
- 
 These requests are sent using a URL, a Uniform Resource Locator. The URL contains the protocol, the host's address, and the resource path, so you end up with something that looks like our example from before. 
 
 <table>
@@ -21,7 +19,7 @@ These requests are sent using a URL, a Uniform Resource Locator. The URL contain
 		<th>Domain Name</th>
 		<th>Top-Level Domain</th>
 		<th>Port</th>
-		<th>URL Path</th>
+		<th>Resource Path</th>
 	</tr>
 	
 	<tr>
@@ -33,17 +31,19 @@ These requests are sent using a URL, a Uniform Resource Locator. The URL contain
 	</tr>
 </table>
 
-Now that we've discussed HTTP a little bit, let's talk about the domain name, which is the next piece of the puzzle. When you type a website's name into the browser bar, it isn't an actual address for the resources that make up the site. Instead, it's like a code to get to the address! 
+First there's `http`. HTTP stands for **H**yper**t**ext **T**ransfer **P**rotocol, and it's used to transmit and receive web pages. HTTP just one of a few protocols that are used for transmitting information from a web server to a client. A client is what's receiving the information - in this case, your browser. There are other protocols you may have seen, like SMPT for mail and FTP for files. When you type "http://" before a website's address, you are telling a web server how to retrieve the document that you want by specifiying the protocol it should use. 
 
-**D**omain **N**ame **S**ervers are the secret agent in the middle of the process. They take the human-readable address that you type in, like `cutekittens.com`, and translate it into an IP address, which is the actual address of the resource. IP addresses look something like this: 74.125.236.195, which is a lot harder to remember than a URL! So it's great that we have DNS servers translating for us.   
+Now let's talk about the domain name, which is the next piece of the puzzle. When you type a website's name into the browser bar, it isn't an actual address for the resources that make up the site. Instead, it's like a code to get to the address! 
 
-Wait a second! Top-level domain? Port?! Okay, really quickly: a top-level domain is the suffix at the end of every website address. Common ones are `.com`, `.org`, `.edu`, and `.gov`, while less-common ones are `.cat`, `.wine`, `.gripe` and `.pizza`. And port just refers to the connection that your computer uses to access the internet, and vice versa. The default port is 80, and since that's implied it's just left off of web addresses. 
+**D**omain **N**ame **S**ervers are the secret agent in the middle of the process. They take the human-readable address that you type in, like `cutekittens.com`, and translate it into an IP address, which is the actual address of the server that the resource lives in. IP addresses are a string of numbers like 74.125.236.195, which is a lot harder to remember than a URL! So it's great that we have DNS servers translating for us.   
 
-Finally, we've got the URL path. This is the actual file or resource that's being served, in this case `cutest-kitten-of-the-year.html`. 
+Next up, we've got the top-level domain. A top-level domain is the suffix at the end of every website address. Common ones are `.com`, `.org`, `.edu`, and `.gov`, while less-common ones are `.cat`, `.wine`, `.gripe` and `.pizza`. 
+
+The port just refers to the connection that your computer uses to access the internet, and vice versa. The default port is 80, and since that's implied it's just left off of web addresses. That's why you hardly ever see a port specified in web addresses, and when you do it's not 80.
+
+Finally, we've got the resource path. This is the actual file or resource that's being served, in this case `cutest-kitten-of-the-year.html`. But something like `pretty-kitty.jpg` would also be a totally valid resource path, as would `cats-of-the-world.pdf`. 
 
 So you've used HTTP to make a request to the server, and told it exactly what to look for. If all goes well, the server sends back a response, which includes the resource you requested! 
-
-Like I said before, there's no shortage of things to talk about on this topic, and there's a ton that I'm not covering here. But now you have a good high-level understanding of what happens when you type an address into your browser's address bar! 
 
 --------- 
 
@@ -57,3 +57,12 @@ GET / HTTP/1.1
 Host: www.google.com
 ```
 You're going to get a really long response with a lot of information. Basically, though, what's just happened is that you've made a request and gotten a response! 
+
+--------------
+
+To recap:
+
+HTTP is used by your browser to communicate with the web server, telling it to bring you the web page you've requested. It's a request/response cycle, with the request composed of a HTTP verb, a ____, and a ____. The response is composed of ______. 
+
+
+Like I said before, there's no shortage of things to talk about on this topic, and there's a ton that I'm not covering here. But now you have a good high-level understanding of what happens when you type an address into your browser's address bar! 
