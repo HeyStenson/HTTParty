@@ -11,7 +11,7 @@ There are a lot of things in life that we also take for granted without knowing 
 
 This could be a hours-long lecture instead of a little talk, but I want you to come away from this with a good overview of the process. 
 
-The first part of this process is you typing in the browser bar. Let's say something like `http://www.cutekittens.com/cutest-kitten-of-the-year.html`. This is a URL, or a Uniform Resource Locator, and it's essentially the address for the resource that you're requesting. Just like a physical address is actually composed of many different parts, like a house number, a street name, a city, a state, and a zip code, a URL is composed of several different parts, each of which contributes something different to the process of retrieving the resource. 
+The first part of this process is you typing in the browser bar. Let's say something like `http://cutekittens.com/cutest-kitten-of-the-year.html`. This is a URL, or a Uniform Resource Locator, and it's essentially the address for the resource that you're requesting. Just like a physical address is actually composed of many different parts, like a house number, a street name, a city, a state, and a zip code, a URL is composed of several different parts, each of which contributes something different to the process of retrieving the resource. 
 
 These parts are the _protocol_, the host's _domain name_ and _top-level domain_, a _port_ number, and the _resource path_, so you end up with something that looks like our example from before. The table below shows that breakdown:
 
@@ -26,7 +26,7 @@ These parts are the _protocol_, the host's _domain name_ and _top-level domain_,
 	
 	<tr>
 		<td>http://</td>
-		<td>www.cutekittens</td>
+		<td>cutekittens</td>
 		<td>.com</td>
 		<td>80</td>
 		<td>cutest-kitten-of-the-year.html</td>
