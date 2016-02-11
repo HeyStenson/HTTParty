@@ -43,7 +43,7 @@ The port just refers to the connection that your computer uses to access the int
 
 Finally, we've got the resource path. This is the actual file or resource that's being served, in this case `cutest-kitten-of-the-year.html`. But something like `pretty-kitty.jpg` would also be a totally valid resource path, as would `cats-of-the-world.pdf`. The client can request, and the server can send, different file types depending on what's been specified in the HTTP request's headers. 
 
-So you've used HTTP to make a request to the server, and told it exactly what to look for. If all goes well, the server sends back a response, which includes the resource you requested! Let's take a look at this cycle with a quick demonstration.
+So you've used HTTP to make a request to the server, and told it exactly what to look for. The server sends back a response, which, if everything has gone correctly, includes the resource you requested! Let's take a look at this cycle with a quick demonstration.
 
 --------- 
 
