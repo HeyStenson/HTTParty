@@ -1,7 +1,7 @@
 # 🐱🌐💻‼️
 ## How does the internet give us cat pictures? 
 
-A classic question that web developers love to ask each other is: What happens when you type a web address into your browser's address bar?
+A classic question that software engineers, web developers, and other cool people love to ask each other is: What happens when you type a web address into your browser's address bar?
 
 When you first hear that question, you're likely to say, "Well, it's simple - you type it in, and then the browser brings it back, and -" and then you start *really thinking* about it, and realize that it's actually a really tricky question!
 
