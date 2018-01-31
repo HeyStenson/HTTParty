@@ -23,7 +23,6 @@ These parts are the _protocol_, the host's _domain name_ and _top-level domain_,
 		<th>Port</th>
 		<th>Resource Path</th>
 	</tr>
-	
 	<tr>
 		<td>http://</td>
 		<td>cutekittens</td>
