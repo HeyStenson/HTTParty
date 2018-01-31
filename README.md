@@ -66,7 +66,7 @@ Then hit enter twice. You're going to get a really long response with a lot of i
 
 --------------
 
-###To recap:
+### To recap:
 
 When you type a web address into your browser's address bar, you're actually starting a complex request/response cycle. The URL that you type in starts with a protocol, HTTP, that tells the server how to transmit the resource you want. The domain name of the site is sent through a Domain Name Server, which resolves it into an IP address that maps to a server where the resource is housed. Once your browser has the IP address, it uses that and the port number, usually 80, to connect with the server by sending a request. The server will respond, and if all went well it will return the requested resource to the client, your browser!
 
